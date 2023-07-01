@@ -1,0 +1,245 @@
+*{
+        margin: 0;
+    }
+    body{
+        font-family: arial,sans-serif;
+        background-color: #1b1b1c;
+        overflow-x: hidden;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    li{
+        float: right;
+        padding: 10px;
+        justify-content: center;
+    }
+    li a{
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+        color:white;
+        font-size: 14px;
+    }
+    
+    li img {
+        max-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    
+    }
+    .header{
+        text-align: center;
+        align-items: center;
+
+    }
+.profile{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.dots{
+    border-radius: 50%;
+}
+.header img:hover{
+    border: 1px whitesmoke solid;
+    cursor: pointer;
+}
+.header a:hover{
+    text-decoration: underline;
+
+}
+
+.container{
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+}
+.logo{
+    align-items: center;
+    text-align: center;
+    
+}
+.searchbox{
+    padding: 15px 0 15px 0;;
+    align-items: center;
+    text-align: center;
+    
+}
+.searchbox input[type=text]{
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px white solid;
+    padding: 5px 5px 5px 50px;
+    margin-left: 30px;
+    background-color: transparent;
+    
+    
+}
+.searchbox img {
+    position: relative;
+    right: 60px;
+    top: 20%;
+    transform: translateY(20%);
+    height: 20px;
+    width: 20px;
+}
+button[type="submit"] {
+    text-indent: -700px;
+    float: left;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+    position: relative;
+    top: 11px;
+    left: 80px;
+    transform: translateX(350px);
+}
+button[type="button"] {
+    height: 36px;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #1b1b1c ;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #303134;
+    color: aliceblue;
+
+}
+button:hover{
+    border: 1px rgba(128, 127, 127, 0.897) solid;
+    
+}
+span{
+    color: grey;
+    font-size: small;
+}
+.lang{
+    padding: 20px;
+}
+.lang a{
+    padding: 2px;
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: 14px;
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.first{
+    background-color: black;
+    border-bottom:1px #3c4043 solid;
+    color:  rgb(120, 122, 124);
+    width: 100%;
+    height: 20px;
+    padding: 15px 50px;
+    font-size: 14px;
+}
+.second{
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    padding: 15px 30px;
+}
+.fs{
+    display: inline-block;
+    padding-left: 5px;
+}
+.fss{
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+
+}
+a{
+    padding-left: 20px;
+    color: rgb(120, 122, 124);
+    text-decoration: none;
+
+}
+.fs a{
+    padding-left: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.fss a{
+    padding-right: 20px;
+    font-size: 14px;
+}
+.fs a:hover{
+    text-decoration: underline;
+}
+.fss a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        padding-left: 10px;
+    }
+    .header{
+        float: right;
+    }
+    .searchbox input[type=text]{
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+        border: 1px white solid;
+        padding: 5px 5px 5px 50px;
+        margin-left: 0px;
+        background-color: transparent;
+    }
+    .logo{
+        padding-left: 40px;
+    }
+    button[type="button"]{
+        display: inline-block;
+    }
+    .buttons{
+        width: 150%;
+        padding: 0;
+        margin: 0;
+    }
+    .lang a{
+        display: inline-block;
+
+    }
+    .lang{
+        width: 150%;
+    }
+    .footer{
+        width: 100%;
+        bottom: 0%;
+    
+    }
+    .first{
+        width: 112%;
+        bottom: 0%;
+    }
+    .second{
+        width: 122%;
+    }
+}
